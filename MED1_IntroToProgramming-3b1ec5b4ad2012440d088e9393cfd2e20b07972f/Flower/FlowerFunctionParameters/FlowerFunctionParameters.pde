@@ -1,7 +1,8 @@
 int r=60;
 float ballX;
 float ballY;
-
+float xSpeed = 1;
+float ySpeed = 1;
 
 void setup() {
   size(600,400);
@@ -12,11 +13,13 @@ void draw(){
    background(#43AF76);
   // frameRate(5);
   
-  float x=random(5);
-  float y=random(5);
+  float x=1;
+  float y=1;
  
   flower(x,y);
  
+ x=x+xSpeed;
+ y=y+ySpeed;
 }
 
 void flower (float x, float y ) {
